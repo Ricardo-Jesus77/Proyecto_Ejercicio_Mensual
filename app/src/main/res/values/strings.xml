@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Proyecto_Ejercicio_Mensual</string>
+    <string name="txtTitulo">Catalogo de Cursos</string>
+    <string name="txtCurso">Curso</string>
+    <string name="txtEspacio">Espacio</string>
+
 </resources>
