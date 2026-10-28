@@ -41,13 +41,13 @@
                 android:contentDescription="Imagen del curso" />
 
             <TextView
-                android:id="@+id/txtCursos"
+                android:id="@+id/txtNomCurso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="16dp"
-                android:text="@string/txtCursos"
+                android:text="@string/txtNomCurso"
                 android:textColor="#111111"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -92,7 +92,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/txtEspacios"
+                android:id="@+id/txtEspacioCurso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
