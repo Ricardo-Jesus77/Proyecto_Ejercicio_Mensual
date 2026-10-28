@@ -1,19 +1,19 @@
+
 package com.example.proyecto_ejercicio_mensual.vista
 
+import java.util.Calendar
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material3.DatePickerDialog
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.proyecto_ejercicio_mensual.R
 
 class InscripcionCurso : AppCompatActivity() {
+
     private lateinit var txtNombreCurso: TextView
     private lateinit var edtMatricula: EditText
     private lateinit var edtFecha: EditText
@@ -25,7 +25,7 @@ class InscripcionCurso : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inscripcion_curso)
 
-        txtNombreCurso = findViewById(R.id.txtNombreCurso)
+        txtNombreCurso = findViewById(R.id.textView)
         edtMatricula = findViewById(R.id.edtMatricula)
         edtFecha = findViewById(R.id.edtFecha)
         edtEmail = findViewById(R.id.edtEmail)
@@ -56,11 +56,11 @@ class InscripcionCurso : AppCompatActivity() {
     private fun mostrarFecha() {
         val calendario = Calendar.getInstance()
 
-        val selector = DatePickerDialog(
+        val selector = android.app.DatePickerDialog(
             this,
-            object : DatePickerDialog.OnDateSetListener {
+            object : android.app.DatePickerDialog.OnDateSetListener {
                 override fun onDateSet(
-                    view: android.widget.DatePicker?,
+                    view: DatePicker,
                     anio: Int,
                     mes: Int,
                     dia: Int
