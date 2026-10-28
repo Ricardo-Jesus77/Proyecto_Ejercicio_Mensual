@@ -1,6 +1,7 @@
 package com.example.proyecto_ejercicio_mensual.presentador
 import com.example.proyecto_ejercicio_mensual.modelo.modelo
 
+
 class presentador {
     fun obtenerCursos(): List<modelo.Curso>? {
         return try {

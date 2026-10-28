@@ -1,4 +1,4 @@
-package com.example.proyecto_ejercicio_mensual.Vista
+package com.example.proyecto_ejercicio_mensual.vista
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
