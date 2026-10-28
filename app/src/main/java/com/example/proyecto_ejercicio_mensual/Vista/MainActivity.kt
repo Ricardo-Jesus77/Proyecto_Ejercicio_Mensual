@@ -1,10 +1,11 @@
-package com.example.proyecto_ejercicio_mensual
+package com.example.proyecto_ejercicio_mensual.Vista
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.proyecto_ejercicio_mensual.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
