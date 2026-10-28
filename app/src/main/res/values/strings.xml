@@ -3,5 +3,12 @@
     <string name="txtTitulo">Catalogo de Cursos</string>
     <string name="txtCurso">Curso</string>
     <string name="txtEspacio">Espacio</string>
+    <string name="txtCursos">Nombre del curso</string>
+    <string name="txtCodigo">Codigo:</string>
+    <string name="txtDescripcion">Descripcion detallada</string>
+    <string name="txtEspacios">Edificio y salon</string>
+    <string name="txtHoras">Horas Totales</string>
+    <string name="txtDias">Dias y Horas de atencion</string>
+
 
 </resources>
