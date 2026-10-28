@@ -1,6 +1,4 @@
-package com.example.proyecto_ejercicio_mensual.Modelo
-
-import com.example.proyecto_ejercicio_mensual.Modelo.RetrofitCliente
+package com.example.proyecto_ejercicio_mensual.modelo
 
 class clsVistaDetalleModelo {
     suspend fun obtenerDetalleCurso(id: Int): dataDetalleCurso {

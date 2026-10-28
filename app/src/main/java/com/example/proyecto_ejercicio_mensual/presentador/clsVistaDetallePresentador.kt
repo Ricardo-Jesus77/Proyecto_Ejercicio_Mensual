@@ -1,7 +1,7 @@
-package com.example.proyecto_ejercicio_mensual.Presentador
-import com.example.proyecto_ejercicio_mensual.Modelo.clsVistaDetalleModelo
-import com.example.proyecto_ejercicio_mensual.Modelo.dataDetalleCurso
-import com.example.proyecto_ejercicio_mensual.Vista.vista_detalle
+package com.example.proyecto_ejercicio_mensual.presentador
+import com.example.proyecto_ejercicio_mensual.modelo.clsVistaDetalleModelo
+import com.example.proyecto_ejercicio_mensual.modelo.dataDetalleCurso
+import com.example.proyecto_ejercicio_mensual.vista.vista_detalle
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
