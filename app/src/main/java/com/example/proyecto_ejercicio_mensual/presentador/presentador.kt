@@ -1,10 +1,11 @@
 package com.example.proyecto_ejercicio_mensual.presentador
+import com.example.proyecto_ejercicio_mensual.modelo.RetrofitCliente
 import com.example.proyecto_ejercicio_mensual.modelo.modelo
 
 class presentador {
     fun obtenerCursos(): List<modelo.Curso>? {
         return try {
-            val respuesta = RetrofitClient.api.obtenerCursos()
+            val respuesta = RetrofitCliente.api.obtenerCursos()
 
             if (respuesta.success) {
                 respuesta.cursos
@@ -18,7 +19,7 @@ class presentador {
 
     fun obtenerInscripciones(): List<modelo.Inscripcion>? {
         return try {
-            val respuesta = RetrofitClient.api.obtenerInscripciones()
+            val respuesta = RetrofitCliente.api.obtenerInscripciones()
 
             if (respuesta.success) {
                 respuesta.inscripciones
