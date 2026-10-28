@@ -19,10 +19,10 @@ class vista_detalle : AppCompatActivity (){
 
     private lateinit var btnBack: Button
     private lateinit var imgCurso: ImageView
-    private lateinit var txtCursos: TextView
+    private lateinit var txtNomCurso: TextView
     private lateinit var txtCodigo: TextView
     private lateinit var txtDescripcion: TextView
-    private lateinit var txtEspacios: TextView
+    private lateinit var txtEspacioCurso: TextView
     private lateinit var txtHoras: TextView
     private lateinit var txtDias: TextView
 
@@ -37,10 +37,10 @@ class vista_detalle : AppCompatActivity (){
         }
         btnBack = findViewById(R.id.btnBack)
         imgCurso = findViewById(R.id.imgCurso)
-        txtCursos = findViewById(R.id.txtCursos)
+        txtNomCurso = findViewById(R.id.txtNomCurso)
         txtCodigo = findViewById(R.id.txtCodigo)
         txtDescripcion = findViewById(R.id.txtDescripcion)
-        txtEspacios = findViewById(R.id.txtEspacios)
+        txtEspacioCurso = findViewById(R.id.txtEspacioCurso)
         txtHoras = findViewById(R.id.txtHoras)
         txtDias = findViewById(R.id.txtDias)
 
@@ -59,10 +59,10 @@ class vista_detalle : AppCompatActivity (){
         }
     }
     fun mostrarDetalle(curso: dataDetalleCurso) {
-        txtCursos.text = curso.curso
+        txtNomCurso.text = curso.curso
         txtCodigo.text = curso.codigo
         txtDescripcion.text = curso.descripcion ?: "Sin descripción"
-        txtEspacios.text = curso.espacio
+        txtEspacioCurso.text = curso.espacio
         txtHoras.text = curso.total_horas
         txtDias.text = curso.dias_atencion
     }
