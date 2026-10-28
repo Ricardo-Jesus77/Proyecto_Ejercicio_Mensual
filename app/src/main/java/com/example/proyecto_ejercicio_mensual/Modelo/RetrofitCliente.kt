@@ -6,14 +6,22 @@ import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 
 object RetrofitCliente {
+
     private const val BASE_URL = "http://10.0.2.2/cursos_api/"
-    private val jsonConfig = Json{
+
+    private val jsonConfig = Json {
         ignoreUnknownKeys = true
     }
-    val apiService: ApiService by lazy {
+
+    val api: ApiService by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
-            .addConverterFactory( jsonConfig.asConverterFactory("application/json".toMediaType()) )
+            .addConverterFactory(
+                jsonConfig.asConverterFactory(
+                    "application/json".toMediaType()
+                )
+            )
             .build()
-            .create(ApiService::class.java) }
+            .create(ApiService::class.java)
+    }
 }
